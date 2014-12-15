@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hockey Stats</title>
+	<link rel="stylesheet" href="assets/stylesheet/reset.css">
+	<link rel="stylesheet" href="assets/stylesheet/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</head>
+<body>
+
+<header>
+
+<h1>Hockey Stats Portal</h1>
+<h2>Search for stats on your favorite teams and players</h2>
+
+</header>
+
+<div class="stack">	
+
+			<h3>Search by Player</h3>
+			<form class="player-getter" onsubmit="return false;">
+				<input type="text" placeholder="Enter player's name" name="player" size="30" autofocus required>
+				<input type="submit" value="Submit">
+			</form>
+
+			<h3>Search by Goalie</h3>
+			<form class="player-getter" onsubmit="return false;">
+				<input type="text" placeholder="Enter player's name" name="player" size="30" autofocus required>
+				<input type="submit" value="Submit">
+			</form>
+
+			<h3>Search by Team</h3>
+			<form class="team-getter" onsubmit="return false;">
+				<input type="text" placeholder="Enter team's name" name="team" size="30"  required>
+				<input type="submit" value="Submit">
+			</form>
+</div>
+
+
+	<div class="templates hidden">
+		<dl class="result player">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
+		</dl>
+	</div>
+
+	<div class="templates hidden">
+		<dl class="result goalie">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
+		</dl>
+	</div>
+
+	<div class= "templates hidden">
+		<dl class="result team">
+			<dt>Profile</dt>
+				<dd class="profile"><a href="" target="_blank"></a></dd>
+			<dt>Reputation</dt>
+				<dd class="reputation"></dd>
+		</dl>
+	</div>
+
+	<div class="error hidden">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>
+	
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
